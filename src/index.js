@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
 import "./index.css";
 import { TreeSelect } from "antd/lib";
+import treeData from "./treeData";
 
 const treeData1 = [
   {
@@ -160,7 +161,7 @@ class Demo extends React.Component {
             style={{ width: 300 }}
             value={this.state.value}
             dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
-            treeData={treeData1}
+            treeData={treeData}
             placeholder="Please select"
             treeDefaultExpandAll
             treeCheckable={true}
@@ -180,7 +181,7 @@ class Demo extends React.Component {
             style={{ width: 300 }}
             value={this.state.value2}
             dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
-            treeData={treeData2}
+            treeData={treeData}
             placeholder="Please select"
             treeDefaultExpandAll
             treeCheckable={true}
@@ -195,7 +196,7 @@ class Demo extends React.Component {
             style={{ width: 300 }}
             value={this.state.value3}
             dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
-            treeData={treeData3}
+            treeData={treeData}
             placeholder="Please select"
             treeDefaultExpandAll
             onChange={this.onChange3}
