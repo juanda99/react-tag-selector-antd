@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
 import "./index.css";
 import { TreeSelect } from "antd/lib";
-import treeData from "./treeData";
+// import treeData from "./treeData";
+import treeData from "./treeData.json";
 
 const treeData1 = [
   {
